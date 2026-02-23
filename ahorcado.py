@@ -5,7 +5,7 @@ palabra_escogida = random.choice(palabras)
 
 blanks = ""
 for i in range(len(palabra_escogida)):
-    blanks += "_"
+    blanks += "_ "
 
 print("Palabra:", blanks)
 
@@ -29,11 +29,11 @@ while not game_over:
         if letra in letra_adivinada:
             tu_palabra += letra
         else:
-            tu_palabra += "_"
+            tu_palabra += "_ "
 
     print("Palabra:", tu_palabra)
 
-    if "_" not in tu_palabra:
+    if "_ " not in tu_palabra:
         print("GANASTE")
         game_over = True
 
