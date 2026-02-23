@@ -1,13 +1,13 @@
-import random
+import random 
 
 palabras = ["rosado", "morado", "azul", "naranja", "verde", "amarillo"]
-palabra_escogida = random.choice(palabras)
+palabra_escogida = random.choice(palabras) #aqui se selecciona una palabra de forma aleatoria
 
-blanks = ""
+blanks = "" 
 for i in range(len(palabra_escogida)):
     blanks += "_ "
 
-print("Palabra:", blanks)
+print("Palabra:", blanks) #en esta parte se cambian las letras por _
 
 letra_adivinada = []
 numero_de_vidas = 7
